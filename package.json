@@ -1,0 +1,19 @@
+{
+  "name": "@hexlet/code",
+  "version": "0.1.0",
+  "description": "brain games",
+  "type": "module",
+  "bin": {
+    "brain-progression": "bin/brain-progression.js",
+  },
+  "author": "Kirill Mokevnin",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "npm-check-updates": "^12.3.0",
+    "eslint-config-airbnb-base": "^15.0.0"
+  }
+}
