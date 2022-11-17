@@ -4,7 +4,7 @@
   "description": "brain games",
   "type": "module",
   "bin": {
-    "brain-progression": "bin/brain-progression.js",
+    "brain-progression": "bin/brain-progression.js"
   },
   "author": "Kirill Mokevnin",
   "license": "ISC",
