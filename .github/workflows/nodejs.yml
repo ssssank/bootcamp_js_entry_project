@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install
-        run: make compose-install
+        run: make compose-setup
       - name: Run linter
         run: make compose-lint
       - name: Run test
