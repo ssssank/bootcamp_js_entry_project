@@ -66,12 +66,38 @@ Congratulations, Sam!
 
 * Любой некорректный ввод считается ошибкой (например, `n`) и равносилен неправильному ответу.
 
+## Требования к файловой структуре
+
+Не изменяйте и не удаляйте никакие файлы, уже существующие в репозитории.
+
+Код вашего решения вы можете располагать так, как вам удобно.
+
+Важное требование к исполняемому файлу, через который будет проверяться работа всего вашего кода:
+
+1. Создайте исполняемый файл **bin/brain-progression.js** и прописать в нём шебанг с правильно указанным интерпретатором (node) — `#!/usr/bin/env node`.
+1. Добавьте файлу *bin/brain-games.js* права на исполнение, выполнив в корневой директории проекта команду `chmod +x bin/brain-games.js`. Это позволит запускать исполняемый файл напрямую из консоли без указания интерпретатора (node) - `./bin/brain-games.js`.
+1. Установите пакет в систему с помощью `npm link` и убедитесь в том, что он работает, запустив `brain-games` в терминале. Команда `npm link` может потребовать запуск с `sudo`.
+
+## Полезные ссылки
+
+* [Скрипты, модули и библиотеки](https://ru.hexlet.io/blog/posts/skripty-moduli-i-biblioteki)
+* [Шебанг](https://goo.gl/p7IdS8)
+* [Npm Scripts](https://docs.npmjs.com/misc/scripts)
+* [Именование в программировании](https://ru.hexlet.io/blog/posts/naming-in-programming)
+* [Ошибки именования в программировании I](https://ru.hexlet.io/blog/posts/naming-errors-1)
+* [Ментальное программирование](https://www.youtube.com/watch?v=EEq1wdM2M2w)
+* [Нисходящее и восходящее проектирование](https://ru.hexlet.io/blog/posts/sovershennyy-kod-nishodyaschee-i-voshodyaschee-proektirovanie)
+* [Проектирование функций](https://ru.hexlet.io/blog/posts/sovershennyy-kod-proektirovanie-funktsiy)
+
 ## Запуск проверки вашего решения
 
-Выполните последо
+При желании можно проверить ваш код на правильность работы и соответствие стайл-гайду.
+Эти проверки требуют установленных Docker и Docker compose. Вы должны понимать, что это такое и как с ними работать.
+
+Проверки можно запустить с помощью следующих команд:
 
 ```bash
-make compose-setup
-make compose-test
-make compose-lint
+make compose-setup // подготовка
+make compose-test // запуск тестов
+make compose-lint // запуск линтера
 ```
