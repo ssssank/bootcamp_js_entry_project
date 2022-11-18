@@ -20,3 +20,6 @@ setup:
 
 lint:
 	npx eslint --no-eslintrc --config .eslintrc.yml .
+
+test:
+	rspec
