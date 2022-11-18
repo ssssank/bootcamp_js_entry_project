@@ -14,3 +14,9 @@ compose-lint:
 
 compose-test:
 	docker compose -f docker-compose.yml up --abort-on-container-exit
+
+setup:
+	npm install
+
+lint:
+	npx eslint --no-eslintrc --config .eslintrc.yml .
