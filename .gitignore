@@ -5,3 +5,4 @@ vendor
 *.swp
 /package-lock.json
 npm-cache
+tmp
